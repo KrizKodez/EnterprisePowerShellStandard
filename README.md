@@ -142,7 +142,7 @@ Microsoft Dokumentation der existierende PowerShell Schlüsselwörter.\
 <a id="bemerkungen"></a>
 <span style="font-size: 21px;font-weight: 630">Bemerkungen </span>[<span style="font-size: 21px;font-weight: 630">(<)</span>](#verweise)[<span style="font-size: 21px;font-weight: 630">(>)</span>](#einleitung)[<span style="font-size: 21px;font-weight: 630">(<<)</span>](#inhalt)
 ---
-Dieses Dokument ist ein Fork des öffentlich verfügbaren Standards mit dem Namen **EPS** (Enterprise PowerShell Standard) in einer angepassten Version für das Labor Berlin.
+Im folgenden Dokument werden wir den Namen des Standards mit EPS (Enterprise PowerShell Standard) abkürzen.
 
 Das hier vorliegende Dokument gibt die vom Autor gesammelten Erfahrungen und Praktiken aber auch einige eigenständige neue Ideen wieder. Trotzdem gibt es viele Übereinstimmungen zu Regelwerken von anderen Autoren, die bewusst oder auch unbewusst übernommen wurden. Deswegen erhebt der Autor natürlich keinen Anspruch auf eine irgendwie geartete Urheberschaft und stellt diesen Standard unter der GPL V3 zur allgemeinen Verfügung.
 
