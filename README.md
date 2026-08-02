@@ -1,4 +1,8 @@
-# PESTemplates
+# Enterprise PowerShell Standard - EPS
+
+
+
+# Template files
 PowerShell template files to kick off with scripting in a standardized form.
 
 ## Motivation
