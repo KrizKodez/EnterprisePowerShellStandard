@@ -1,8 +1,10 @@
+![MSAD](https://img.shields.io/badge/Active_Directory_Domain_Services-blue) ![PowerShell](https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=powershell&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green)](https://www.gnu.org/licenses/gpl-3.0)
 # Enterprise PowerShell Standard - EPS
 
+The online version of the EPS Standard could be found here:
+[https://krizkodez.github.io/EnterprisePowerShellStandard/](https://krizkodez.github.io/EnterprisePowerShellStandard/)
 
-
-# Template files
+## Template files
 PowerShell template files to kick off with scripting in a standardized form.
 
 ## Motivation
@@ -54,11 +56,8 @@ Active.Directory.Check.ACME.lib.ps1
 ```
 In this way a hierachical structure of library files is created.
 
-
 ## Contributing
 All Administrators which using PowerShell are very welcome to help and make the templates better, more useful or contribute new ideas.
 
-
 ## License
-
 This project is licensed under the terms of the GPL V3 license. Please see the included Licence.txt file for more details.
