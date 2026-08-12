@@ -98,7 +98,8 @@ Dieser Abschnitt wird in zukünftigen Versionen eine Übersicht der Korrekturen 
 Die hier aufgeführten Verweise sind Quellen, die bei der Erstellung dieses Dokumentes genutzt wurden bzw. bei denen weiterführende Informationen zu finden sind. Jeder Verweis wird im Dokument durch eine Abkürzung der Form \[NAME\] repräsentiert.
 
 [EPSTEMPLATES]\
-Vorlagen in diesem Repository zur Implementierung des EPS (Enterprise PowerShell Standard).
+Code-Vorlagen des Autors zur Anwendung des EPS (Enterprise PowerShell Standard).
+[https://github.com/KrizKodez/EnterprisePowerShellStandard](https://github.com/KrizKodez/EnterprisePowerShellStandard)
 
 [SEMVERS]\
 Schema zur Versionierung von Quellcode dem z.B. die Microsoft PowerShell Gallery aber auch viele andere folgen.\
@@ -953,7 +954,7 @@ Dabei können z.B. die privaten Funktionen thematisch in verschiedenen Bibliothe
     </tr>
     <tr>
         <td style="border:1px solid grey" align="center">
-        <img style="height:34px;width:34px" src="images/check.png">
+        <img style="height:34px;width:34px" src="check.png">
         </td>
         <td style="border:1px solid grey">
             Logging.Controller.lib.ps1<br>
@@ -961,7 +962,7 @@ Dabei können z.B. die privaten Funktionen thematisch in verschiedenen Bibliothe
         </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">Logging.lib.ps1</td>
     </tr>
 </table>
@@ -991,7 +992,7 @@ Die Hierarchie wird dabei von spezifisch nach allgemein durchlaufen und entspre�
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
             GPOSupport.ActiveDirectory.ACME.lib.ps1
         </td>
@@ -1021,7 +1022,7 @@ Tiefe Verschachtlung von Codeblöcken ist in fast allen Fällen schwer lesbar un
     </tr>
     <tr>
         <td style="border:1px solid grey" align="center">
-        <img style="height:34px;width:34px" src="images/check.png"></td>
+        <img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1040,7 +1041,7 @@ If ($IsFirstCondition)
 </tr>
     <tr>
         <td style="border:1px solid grey" align="center">
-        <img style="height:42px;width:42px" src="images/cross.png"></td>
+        <img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1117,7 +1118,7 @@ Jede Anweisung MUSS in einer separaten Zeile beginnen, Ausnahmen sind die Schlü
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1135,7 +1136,7 @@ Soll der Rückgabewert eines Cmdlets oder einer Funktion unterdrückt werden MUS
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1144,7 +1145,7 @@ $null = New-Item -Path 'Test' -ItemType Directory
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1163,7 +1164,7 @@ Die automatische Variable `$null` MUSS links von einem Vergleichsoperator stehen
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1172,7 +1173,7 @@ $null -eq $Array
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1193,7 +1194,7 @@ String Literale die keine Variablen-Expansion enthalten MÜSSEN in Hoch­kommas 
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1202,7 +1203,7 @@ $Name = 'Peter Smith'
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1223,7 +1224,7 @@ Beim Aufruf einer Funktion oder Cmdlet MÜSSEN die Namen der Parameter vollstän
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1232,7 +1233,7 @@ TestConfigFile -Path c:\script\config.json
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1253,7 +1254,7 @@ Beim Aufruf einer Funktion oder Cmdlets MÜSSEN die Argumente mittels der Parame
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1262,7 +1263,7 @@ TestConfigFile -Path c:\script\config.json
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1288,7 +1289,7 @@ Bei der Nutzung von Funktionen bzw. Cmdlets MÜSSEN Verb, Noun und Parameter in 
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1297,7 +1298,7 @@ Get-ChildItem -Path D:\Logs
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1315,7 +1316,7 @@ Ist der Aufruf einer Funktion sehr lang MUSS das Parameter-Splatting genutzt wer
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1332,7 +1333,7 @@ Set-GPPermission @Parameters -Replace
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1354,7 +1355,7 @@ $\<FunktionsName>Parameters
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1385,7 +1386,7 @@ Pipeline-Konstrukte, die eine Schleife darstellen MÜSSEN durch eine for- oder f
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1398,7 +1399,7 @@ foreach ($User in $Users)
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1418,7 +1419,7 @@ Wenn eine foreach-Schleife durch eine Kollektion läuft MUSS die Laufvariable vo
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1427,7 +1428,7 @@ foreach ($User in $Users) {...}
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1436,7 +1437,7 @@ foreach ($Account in $Users) {...}
 </td>
 </tr>
 <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1456,7 +1457,7 @@ Literale und "Magic Values" MÜSSEN vermieden werden.
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1467,7 +1468,7 @@ Out-File -FilePath $LOGFILE_PATH
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1491,7 +1492,7 @@ Sind alle Werte einer Hashtabelle aus dem gleichen Wertebereich z.B. E-Mail-Adre
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1500,7 +1501,7 @@ $MailAddressOf[$User]
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1584,7 +1585,7 @@ Die automatischen Variablen der PowerShell MÜSSEN identisch zur Definition von 
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell 
@@ -1593,7 +1594,7 @@ $null
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1611,7 +1612,7 @@ Beim Aufruf eines externen Programms MUSS das Dateinamen-Suffix angegeben wer­d
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1620,7 +1621,7 @@ robocopy.exe
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1641,7 +1642,7 @@ Type Accelerators d.h. Aliase für .NET Datentypen MÜSSEN in Kleinbuchstaben ge
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell 
@@ -1650,7 +1651,7 @@ Type Accelerators d.h. Aliase für .NET Datentypen MÜSSEN in Kleinbuchstaben ge
 </td>
 </tr>
 <tr>
-    <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+    <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
     <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1661,7 +1662,7 @@ Type Accelerators d.h. Aliase für .NET Datentypen MÜSSEN in Kleinbuchstaben ge
 </td>
 </tr>
 <tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
     <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1670,7 +1671,7 @@ Type Accelerators d.h. Aliase für .NET Datentypen MÜSSEN in Kleinbuchstaben ge
 </td>
 </tr>
 <tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
     <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1714,7 +1715,7 @@ Vor und nach dem Zuweisungsoperator MUSS ein Leerzeichen sein.
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1723,7 +1724,7 @@ $Name = 'Bill Gates'
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1744,7 +1745,7 @@ Codeblöcke {...} die in Verbindung mit Schlüsselwörtern wie `for, foreach, if
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1756,7 +1757,7 @@ for (...)
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1776,7 +1777,7 @@ Codeblöcke {...} die einen Funktionskörper definieren MÜSSEN die Start- und E
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1788,7 +1789,7 @@ function TestConfigFile
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1808,7 +1809,7 @@ Besteht der Codeblock {...} aus nur einer Anweisung MUSS er einzeilig geschriebe
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1817,7 +1818,7 @@ foreach ($Item in $Items) { Write-Output $Item }
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1826,7 +1827,7 @@ if ($Date -lt $Today) { Write-Output $Result; return }
 </td>
 </tr>
     <tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
     <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1849,7 +1850,7 @@ Eine Konstruktion mit zwei einzeiligen Codeblöcken MUSS mit gleicher Ausrichtun
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1859,7 +1860,7 @@ else                 { ... }
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1891,7 +1892,7 @@ Codeblöcke die im Editor nicht komplett auf einer Seite dargestellt werden kön
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1931,7 +1932,7 @@ Konstanten MÜSSEN mit dem Cmdlet New-Variable erstellt werden.
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1940,7 +1941,7 @@ New-Variable -Name REGEX_VALID_NAME -Value '^\[a-z0-9\_\]+$'-Option Constant
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1969,7 +1970,7 @@ Ein Bezeichner DARF NICHT aus einem einzelnen Buchstaben bestehen, außer in dem
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1978,7 +1979,7 @@ for ($i=0; $i -lt 100; $i++) { ... }
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -1996,7 +1997,7 @@ In Zählschleifen MÜSSEN die Bezeichner, die nur aus einem Buchstaben bestehen,
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2011,7 +2012,7 @@ for ($a=0; $a -lt 100; $a++)
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2035,7 +2036,7 @@ Ein Bezeichner MUSS so beschreibend wie möglich sein dabei aber nur so lang wie
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2044,7 +2045,7 @@ $Ver = '3.0.1'
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2088,7 +2089,7 @@ Der Bezeichner DARF Typinformationen (Hungarian Notation) NICHT enthalten.
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2097,7 +2098,7 @@ $NumberOfMembers = 1000
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2115,7 +2116,7 @@ Der Bezeichner DARF NICHT Ziffern oder andere Art von Nummerierung enthalten.
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2124,7 +2125,7 @@ $Name1
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2145,7 +2146,7 @@ Enthält eine Variable einen Wert der eine physikalische oder andere Art der Ein
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2154,7 +2155,7 @@ $RetentionPeriodDay
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2183,7 +2184,7 @@ Funktionsnamen in Controllern oder privaten Bibliotheken MÜSSEN ohne Bindestric
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2195,7 +2196,7 @@ function TestConfigFile
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2246,7 +2247,7 @@ Die Parameter einer Funktion MÜSSEN im Funktionskörper mittels des Schlüsselw
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2260,7 +2261,7 @@ function TestUser
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2442,7 +2443,7 @@ Das Schlüsselwort return SOLL nur zum vorzeitigen Beenden einer Funktion genutz
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2456,7 +2457,7 @@ function TestUser
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2478,7 +2479,7 @@ Das Schlüsselwort `return` DARF NICHT mit der Rückgabe von Objekten verbunden 
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2510,7 +2511,7 @@ Funktionen DÜRFEN NICHT auf Variablen des aufrufenden Scopes schreibend zugrei�
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2549,7 +2550,7 @@ Der Name eines Parameters SOLLTE mit existierenden Bezeichnungen von Microsoft k
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="images/check.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2559,7 +2560,7 @@ FindMember -Identity 'Meyer'
 </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
@@ -2580,7 +2581,7 @@ Ein Parameter eines Controllers oder Funktion DARF NICHT auf der rechten Seite e
     <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="images/cross.png"></td>
+        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
 ```PowerShell
