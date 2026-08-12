@@ -1,7 +1,7 @@
-![MSAD](https://img.shields.io/badge/Active_Directory_Domain_Services-blue) ![PowerShell](https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=powershell&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green)](https://www.gnu.org/licenses/gpl-3.0)
+![PowerShell](https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=powershell&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green)](https://www.gnu.org/licenses/gpl-3.0)
 # Enterprise PowerShell Standard - EPS
 
-The online version of the EPS Standard could be found here:
+The online version of the EPS Standard could be found here:\
 [https://krizkodez.github.io/EnterprisePowerShellStandard/](https://krizkodez.github.io/EnterprisePowerShellStandard/)
 
 ## Template files
