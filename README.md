@@ -1,46 +1,4 @@
-<table style=" margin-left: auto;margin-right: auto">
-    <tbody>
-        <tr>
-            <td rowspan="5" style="background-color:#147ee9;column-width:15px"></td>
-            <td style="font-size:30px;font-weight: 660;color:#147ee9">PowerShell im Unternehmen</td>
-        </tr>
-        <tr>
-          <td style="border: 0px solid"></td>
-        </tr>
-        <tr>
-            <td style="font-size:21px;line-height:22px;font-weight:600;border:0px solid">
-                Best Practices<br>
-                Regeln<br>
-                Tipps
-            </td>
-        </tr>
-        <tr>
-            <td style="border: 0px solid"></td>
-        </tr>
-        <tr>
-            <td style="padding-top: 10px;padding-bottom: 0px;padding-left:0px;border:0px solid">
-                <table>
-                    <tr>
-                        <td style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">Autor:</td>
-                        <td style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">Christoph Rust</td>
-                    </tr>
-                    <td style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">Version:</td>
-                    <td style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">1.0</td>
-                    <tr>
-                        <td  style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">Datum:</td>
-                        <td  style="padding-top:0px;padding-bottom:0px;font-size:19px;border:0px">13.04.2026</td>
-                    </tr>
-                </table>
-            </td>  
-        </tr>
-    </tbody>
-</table>
-
-<table>
-    <tr style="height:70px">
-        <td></td>
-    </tr>
-</table>
+## KrizKodez / 13.04.2026
 
 <a id="inhalt"></a>
 ## Inhaltsverzeichnis
@@ -141,8 +99,8 @@ Microsoft Dokumentation der existierende PowerShell Schlüsselwörter.\
 
 
 <a id="bemerkungen"></a>
-<span style="font-size: 21px;font-weight: 630">Bemerkungen </span>[<span style="font-size: 21px;font-weight: 630">(<)</span>](#verweise)[<span style="font-size: 21px;font-weight: 630">(>)</span>](#einleitung)[<span style="font-size: 21px;font-weight: 630">(<<)</span>](#inhalt)
----
+<span style="font-size: 21px;font-weight: 650">Bemerkungen </span>[<span style="font-size: 20px;font-weight: 630"><</span>](#verweise)[<span style="font-size: 20px;font-weight: 630">></span>](#einleitung)[<span style="font-size: 20px;font-weight: 630"><<</span>](#inhalt)
+
 Im folgenden Dokument werden wir den Namen des Standards mit EPS (Enterprise PowerShell Standard) abkürzen.
 
 Das hier vorliegende Dokument gibt die vom Autor gesammelten Erfahrungen und Praktiken aber auch einige eigenständige neue Ideen wieder. Trotzdem gibt es viele Übereinstimmungen zu Regelwerken von anderen Autoren, die bewusst oder auch unbewusst übernommen wurden. Deswegen erhebt der Autor natürlich keinen Anspruch auf eine irgendwie geartete Urheberschaft und stellt diesen Standard unter der GPL V3 zur allgemeinen Verfügung.
@@ -174,6 +132,7 @@ Der Standard berücksichtigt ebenfalls nicht die speziellen Eigenheiten bei der 
 Die hier getroffenen Vorgaben sollen nur bei Skripten zur Anwendung kommen und nicht beim interaktiven Einsatz der PowerShell.
 
 Im Dokument werden Platzhalter in der folgenden Form verwendet:
+
 |Platzhalter | Beschreibung |
 |------|------|
 |\<Name> | Verpflichtender Wert/Item vom Typ *Name* 
@@ -181,7 +140,6 @@ Im Dokument werden Platzhalter in der folgenden Form verwendet:
 |{Name} | Mehrfacher optionaler Wert/Item vom Typ *Name*
 
 <a id="einleitung"></a>
-
 ## Einleitung
 Die Microsoft PowerShell ist ein mächtiges Werkzeug für das interaktive Arbeiten sowie die Erstellung von Skripten. Beim Arbeiten in einer interaktiven Sitzung möchte der Benutzer möglichst schnell und effizient arbeiten und es ist daher jede Unterstützung von PowerShell wie kurze Parameternamen, Aliase oder komplexe und leistungsfähige Befehlsfolgen in der Pipeline willkommen. Die Anforderungen an ein Skript sind dage­gen völlig andere, da ein Skript normalerweise wiederverwendet werden soll und der Code von anderen gelesen, verstanden und gepflegt werden muss. Diese entscheiden­den Unterschiede lassen es sinnvoll erscheinen, Regeln und Empfehlungen zu definie­ren, die helfen können, die folgenden Ziele zu erreichen:
 
@@ -1718,18 +1676,18 @@ Vor und nach dem Zuweisungsoperator MUSS ein Leerzeichen sein.
         <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
         <td style="border:1px solid grey">
 
-```PowerShell
+<pre><code>
 $Name = 'Bill Gates'
-```        
+</code></pre>      
 </td>
     </tr>
     <tr>
         <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
         <td style="border:1px solid grey">
 
-```PowerShell
+<pre><code>
 $Name=‘Bill Gates’
-```
+</code></pre> 
 </td>
 </tr>
 </table>
@@ -1797,6 +1755,7 @@ function TestConfigFile (<ParameterList>) {
 ...
 }
 ```
+
 </td>
 </tr>
 </table>
