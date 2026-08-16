@@ -1,14 +1,25 @@
 ![PowerShell](https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=powershell&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green)](https://www.gnu.org/licenses/gpl-3.0)
 # Enterprise PowerShell Standard - EPS
+Microsoft PowerShell is a powerful tool for both interactive work and scripting. When working in an interactive session, users want to work as quickly and efficiently as possible, so any support from PowerShell, like short parameter names, aliases, or complex and powerful command sequences in the pipeline, is welcome. The requirements for a script, however, are completely different, since a script is usually meant to be reused and the code needs to be read, understood, and maintained by others. These crucial differences make it sensible to define rules and recommendations that can help achieve the following goals:
+
++ Structured code
++ Consistent formatting
++ Improved readability
++ Avoidance of errors
++ Usable documentation
++ Inventory of scripts
++ Reusability of code
+
+Here the author presents a solution for this problem.
 
 The online version of the EPS Standard could be found here:\
 [https://krizkodez.github.io/EnterprisePowerShellStandard/](https://krizkodez.github.io/EnterprisePowerShellStandard/)
 
-## Template files
-PowerShell template files to kick off with scripting in a standardized form.
+A PDF version could be downloaded here:\
+[https://krizkodez.github.io/EnterprisePowerShellStandard/PowerShell_im_Unternehmen.pdf](https://krizkodez.github.io/EnterprisePowerShellStandard/PowerShell_im_Unternehmen.pdf)
 
-## Motivation
-The templates are a good starting point for working in a team and later perhaps in a larger audience to build a unified code base. Through the defined structure and formatting it is easier to read, debug or adapt other people's code. The defined metadata captures important data about the code and allows the automated creation of a script catalog. The creation of a lightweight function library is also supported, which can avoid the much more complex creation of PowerShell modules.
+## Template files
+This branch of the repo contains the EPS template files to kick off with scripting in a standardized form. The templates are a good starting point for working in a team and later perhaps in a larger audience to build a unified code base. Through the defined structure and formatting it is easier to read, debug or adapt other people's code. The defined metadata captures important data about the code and allows the automated creation of a script catalog. The creation of a lightweight function library is also supported, which can avoid the much more complex creation of PowerShell modules.
 
 ## Description
 In principle, we differentiate between two types of scripts, Controller scripts and Tool scripts.
