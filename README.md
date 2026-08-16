@@ -1,16 +1,16 @@
 <table style="border:none;font-size:larger">
     <tr>
-    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#000000">-</td>
+    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#535353">-</td>
     <td style="padding:10px;border:none;width:70px;vertical-align:middle">Autor:</td>
     <td style="padding:0px;border:none;width:150px;vertical-align:middle">Christoph Rust</td>
     </tr>
     <tr>
-    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#000000">-</td>
+    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#535353">-</td>
     <td style="padding:10px;border:none;width:70px;vertical-align:middle">Version:</td>
     <td style="padding:0px;border:none;width:150px;vertical-align:middle">1.0</td>
     </tr>
     <tr>
-    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#000000">-</td>
+    <td style="padding:0px;border:none;width:40px;height:50px;background-color:#535353">-</td>
     <td style="padding:10px;border:none;width:70px;vertical-align:middle">Datum:</td>
     <td style="padding:0px;border:none;width:150px;vertical-align:middle">13.04.2026</td>
     </tr>
