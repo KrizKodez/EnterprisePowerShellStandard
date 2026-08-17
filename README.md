@@ -36,19 +36,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[EXCEPTION HANDLING](#exception-handling)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bibliotheken](#bibliotheken)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Private Bibliothek](#private-bibliothek)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[INFO HEADER](#info-header)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#declarations-and-definitions)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCRIPTBLOCKS](#scriptblocks)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTIONS](#functions)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[INFO HEADER](#bibliothek-privat-info-header)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#bibl-privat-decdef)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCRIPTBLOCKS](#bibliothek-privat-scriptblocks)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTIONS](#bibliothek-privat-functions)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Öffentliche Bibliothek](#öffentliche-bibliothek)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[INFO HEADER](#info-header)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#declarations-and-definitions)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCRIPTBLOCKS](#scriptblocks)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTIONS](#functions)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[INFO HEADER](#bibliothek-public-info-header)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#bibl-public-decdef)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCRIPTBLOCKS](#bibliothek-public-scriptblocks)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTIONS](#bibliothek-public-functions)\
 [Dateinamen](#dateinamen)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Controller](#controller)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Private Funktionsbibliothek](#private-funktionsbibliothek)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Öffentliche Funktionsbibliothek](#öeffentliche-funktionsbibliothek)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Öffentliche Funktionsbibliothek](#öffentliche-funktionsbibliothek)\
 [Code](#code)\
 [Formatierung](#formatierung)\
 [Kommentare](#kommentare)\
@@ -56,9 +56,9 @@
 [Variablen](#variablen)\
 [Funktionen](#funktionen)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTION HELP](#function-help)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PARAMETERS](#parameters)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PARAMETER CHECK](#parameter-check)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#declarations-and-definitions)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PARAMETERS](#funktionen-parameters)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PARAMETER CHECK](#funktionen-parameter-check)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DECLARATIONS AND DEFINITIONS](#funktionen-declarations-and-definitions)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FUNCTION CODE](#function-code)\
 [Parameter](#parameter)\
 [Versionierung](#versionierung)\
@@ -599,6 +599,8 @@ Eine private Bibliothek MUSS nach dem im folgenden definierten Schema erstellt w
 \+ [SCRIPT BLOCKS]\
 \+ \<FUNCTIONS>
 
+<a id="bibliothek-privat-info-header"></a>
+
 ### INFO HEADER    
 Zur allgemeinen Beschreibung siehe den äquivalenten Block für den Controller.\
 Der Block besteht aus verschiedenen Sektionen, die durch ein dotted Keyword eingeleitet werden. Es gibt einzeilige und mehrzeilige Sektionen.
@@ -679,6 +681,8 @@ This library contains private functions for the script defined in REQUIREDSCRIPT
 Es gelten die selben Regeln wie im INFO HEADER Block des Controllers.\
 Werden Änderungen an Funktionen oder Scriptblocks vorgenommen MUSS der Name der Funktion bzw. des Scriptblocks aufgeführt werden.
 
+<a id="bibl-privat-decdef"></a>
+
 ### DECLARATIONS AND DEFINITIONS
 Die Definition und Deklaration von Variablen und Konstanten an einer dedizierten und prominenten Position in der Bibliothek verdeutlicht die Nutzung, Sichtbarkeit und Wichtigkeit der Elemente. Für weitere Regeln zur Verwendung von Konstanten und Variablen siehe die entsprechenden Abschnitte [**Konstanten**](#_toc2057), [**Variablen**](#_toc2097).
 
@@ -707,9 +711,13 @@ andernfalls MÜSSEN Variablen und Konstanten in getrennten Sektionen deklariert/
 Die Sektionen CONSTANTS und VARIABLES MÜSSEN eingerückt werden.\
 Zur Definition von Konstanten und Variablen informieren die entspre­chende Abschnitte [**Konstanten**](#konstanten)**,** [**Variablen**](#_toc2097).
 
+<a id="bibliothek-privat-scriptblocks"></a>
+
 ### SCRIPTBLOCKS
 **Struct-5.4**\
 Dieser Block ist OPTIONAL wenn die private Bibliothek Scriptblocks definiert, andern­falls KANN ein leerer Block auch weggelassen werden.
+
+<a id="bibliothek-privat-functions"></a>
 
 ### FUNCTIONS
 **Struct-5.5**\
@@ -735,6 +743,8 @@ Eine öffentliche Bibliothek MUSS nach dem im folgenden definierten Schema erste
 \+ \<DECLARATIONS AND DEFINITIONS>\
 \+ [SCRIPT BLOCKS]\
 \+ \<FUNCTIONS>
+
+<a id="bibliothek-public-info-header"></a>
 
 ### INFO HEADER
 Zur allgemeinen Beschreibung siehe den äquivalenten Block für den Controller bzw. die öffentliche Bibliothek. Der Block besteht aus verschiedenen Sektionen, die durch ein dotted Keyword eingeleitet werden. Es gibt einzeilige und mehrzeilige Sektionen.
@@ -826,6 +836,8 @@ Die einzelnen Teile MÜSSEN durch Komma getrennt werden.\
 Das Datum MUSS im ISO-Format angegeben werden.\
 Die Version 1.0.0 ist die erste Version, die in die Produktion genommen wird und die \<ChangeDescription> MUSS den Wert "Released to production" enthalten.
 
+<a id="bibl-public-decdef"></a>
+
 ### DECLARATIONS AND DEFINITIONS
 Die Definition und Deklaration von Konstanten an einer dedizierten und prominenten Position in der Bibliothek verdeutlicht die Nutzung, Sichtbarkeit und Wichtigkeit der Elemente. Für weitere Regeln zur Verwendung von Konstanten siehe den Abschnitt Konstanten.
 
@@ -844,9 +856,13 @@ andernfalls
 ```
 Der Codeblock enthält hier keine Möglichkeit Variablen zu deklarieren oder zu definieren da in öffentlichen Bibliotheken keine globalen Variablen erlaubt sind, siehe dazu auch Regel **Struct-12**.
 
+<a id="bibliothek-public-scriptblocks"></a>
+
 ### SCRIPTBLOCKS
 **Struct-6.3**\
 Der Block ist OPTIONAL wenn die öffentliche Bibliothek Scriptblocks definiert andernfalls KANN ein leerer Block auch weggelassen werden.
+
+<a id="bibliothek-public-functions"></a>
 
 ### FUNCTIONS
 **Struct-6.4**\
@@ -1296,7 +1312,7 @@ Set-GPPermission @Parameters -Replace
         <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
         <pre>   
 Set-GPPermission -Name $GPO.DisplayName -Replace -TargetType User -TargetName $Trustee -PermissionLevel None
-    
+
 </pre>
     </td>
     </tr>
@@ -1307,24 +1323,24 @@ Der Funktionsaufruf SOLLTE direkt in der Zeile nach der Definition der Hashtabel
 
 **Code-17.2**\
 Kann der Funktionsaufruf nicht direkt nach der Parameters-Hashtabelle erfolgen, weil z.B. die Hashtabelle in mehreren Schritten aufgebaut wird MUSS der Bezeichner der Hashtabelle den Funktionsnamen beinhalten:
+<Table style="border:0px;margin-left:auto;margin-right:auto;font-size:19px">
+    <tr><td style="border:0px">$&lt;FunktionsName&gt;Parameters</td></tr>
+</Table>
 
-$\<FunktionsName>Parameters
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-$SetGPPermissionParameters = @{ ... }
-                .
-                .
-                .
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>$SetGPPermissionParameters = @{ ... }
+.
+.
+.
 Set-GPPermission @SetGPPermissionParameters -Replace
-```        
-</td>
+</pre>
+        </td>
     </tr>
 </table>
 
@@ -1340,101 +1356,98 @@ Pipeline-Konstrukte DÜRFEN sich NICHT über mehr als eine Zeile erstrecken.
 **Code-21**\
 Pipeline-Konstrukte, die eine Schleife darstellen MÜSSEN durch eine for- oder foreach Kontrollstruktur ersetzt werden.
 
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 $Users = Import-Csv -Path Users.csv
 foreach ($User in $Users)
 {
     Do-Anything $User
 }
-```        
-</td>
+   
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-Import-Csv Users.csv | %{ Do-Anything $\_ }
-```
-</td>
-</tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
+Import-Csv Users.csv | %{ Do-Anything $_ }
+    
+</pre>
+    </td>
+    </tr>
 </table>
 
 Die foreach-Schleife ist besser erkennbar und vermeidet die anonyme Variable $_.
 
 **Code-22**\
 Wenn eine foreach-Schleife durch eine Kollektion läuft MUSS die Laufvariable von dem Namen der Kollektion abgeleitet werden d.h. es MUSS der Singular des Namens der Kollektion sein.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 foreach ($User in $Users) {...}
-```        
-</td>
+   
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>    
 foreach ($Account in $Users) {...}
-```
-</td>
-</tr>
-<tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+    
+</pre>
+    </td>
+    </tr>
+        <tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>    
 foreach ($u in $Users) {...}
-```
-</td>
-</tr>
+    
+</pre>
+    </td>
+    </tr>
+
 </table>
 
 Es DARF von dieser Regel abgewichen werden wenn der Name der Kollektion gleichzei­tig ein Parameter des Controllers/Funktion ist, da in diesem Fall der Bezeichner der Kollektion schon Singular ist. Es wird empfohlen dann die Laufvariable mit `$Item` zu bezeichnen.
 
 **Code-23**\
 Literale und "Magic Values" MÜSSEN vermieden werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-New-Variable -Name LOGFILE_PATH -Value 'ScriptLog.txt' -Option Constant
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>New-Variable -Name LOGFILE_PATH -Value 'ScriptLog.txt' -Option Constant
 ...
 Out-File -FilePath $LOGFILE_PATH
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 Out-File -FilePath 'ScriptLog.txt'
-```
-</td>
-</tr>
+    
+</pre>
+    </td>
+    </tr>
 </table>
 
 Die Literale sind dann als Konstanten anzusehen und MÜSSEN im Block DECLARATIONS AND DEFINITIONS initialisiert werden.
@@ -1445,28 +1458,29 @@ Sind alle Werte einer Hashtabelle aus dem gleichen Wertebereich z.B. E-Mail-Adre
     <tr><td style="border:0px">$&lt;ValueType&gt;Of[&lt;KeyName&gt;]</td></tr>
 </Table>
 
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>      
 $MailAddressOf[$User]
-```        
-</td>
+ 
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>            
 $UserObjectOf[$samAccountName]
-```
-</td>
-</tr>
+   
+</pre>
+ 
+    </td>
+    </tr>
 </table>
 
 **Code-25**\
@@ -1536,55 +1550,55 @@ PowerShell Operatoren wie -eq, -ne, -gt etc. pp. MÜSSEN klein geschrieben werde
 **Form-4**\
 Die automatischen Variablen der PowerShell MÜSSEN identisch zur Definition von Microsoft geschrieben werden. Eine Liste der verfügbaren Variablen findet man unter [MSAUTOVAR].
 
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell 
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>    
 $null
-```        
-</td>
+   
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>       
 $NULL
-```
-</td>
-</tr>
+    
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Form-5**\
 Beim Aufruf eines externen Programms MUSS das Dateinamen-Suffix angegeben wer­den, um es deutlich als externes Binary von einer Funktion oder Cmdlet zu unterschei­den.
 
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 robocopy.exe
-```        
-</td>
+   
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 robocopy
-```
-</td>
-</tr>
+    
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Form-6**\
@@ -1593,48 +1607,48 @@ Codezeilen DÜRFEN NICHT mit einem Backtick (`) umgebrochen werden. Es MUSS ein 
 **Form-7**\
 Type Accelerators d.h. Aliase für .NET Datentypen MÜSSEN in Kleinbuchstaben ge­schrieben werden.
 
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell 
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 [string]$UserName = 'Peter Smith'
-```        
-</td>
-</tr>
-<tr>
-    <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-    <td style="border:1px solid grey">
-
-```PowerShell
+   
+</pre>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 [Parameter(Mandatory=$true)]
 [AllowEmptyString()]
 [string]$Path
-```
-</td>
-</tr>
-<tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-    <td style="border:1px solid grey">
-
-```PowerShell
+   
+</pre>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 [String]$UserName = 'Peter Smith'
-```
-</td>
-</tr>
-<tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-    <td style="border:1px solid grey">
-
-```PowerShell
+    
+</pre>
+    </td>
+    </tr>
+    <tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 [STRING]$UserName = 'Peter Smith'
-```
-</td>
-</tr>
+    
+</pre>
+    </td>
+    </tr>
 </table>
 
 Von dieser Regel ausgenommen sind die Attribut-Typen wie z.B. `Alias, AllowNull, AllowEmptyString` etc. pp. Eine Liste der verfügbaren Aliase findet man unter \[TYPEACCEL\].
@@ -1687,34 +1701,29 @@ Eine Zeile DARF NICHT mit einem Semikolon als Zeilenendezeichen versehen werden.
 
 **Form-11**\
 Codeblöcke {...} die in Verbindung mit Schlüsselwörtern wie `for, foreach, if, else, switch, try, catch` etc. definiert werden MÜSSEN die Start- und Endklammern des Blocks mit identischer Einrückung formatieren.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-for (...)
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>for (...)
 {
 ...
 }
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-for (...) {
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>for (...) {
 ...
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Form-12**\
@@ -1744,72 +1753,70 @@ Codeblöcke {...} die einen Funktionskörper definieren MÜSSEN die Start- und E
 
 **Form-13**\
 Besteht der Codeblock {...} aus nur einer Anweisung MUSS er einzeilig geschrieben werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 foreach ($Item in $Items) { Write-Output $Item }
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>  
 if ($Date -lt $Today) { Write-Output $Result; return }
-```
-</td>
-</tr>
-    <tr>
-    <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-    <td style="border:1px solid grey">
 
-```PowerShell
+</pre>
+    </td>
+    </tr>
+    <tr>
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>
 foreach ($Item in $Items)
 {
     Write-Output $Item
 }
-```        
-</td>
+</pre>
+    </td>
     </tr>
+
 </table>
 
 Konstrukte aus der Regel **Code-5** werden hier als eine Anweisung angesehen. Von dieser Regel ausgenommen sind nur sehr lange Codezeilen.
 
 **Form-14**\
 Eine Konstruktion mit zwei einzeiligen Codeblöcken MUSS mit gleicher Ausrichtung sowohl der Schlüsselwörter als auch der Codeblöcke formatiert werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 if ($IsUserExisting) { ... }
 else                 { ... }
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 if ($IsUserExisting) { ... }
 else { ... }
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 # Kommentare
@@ -1827,35 +1834,32 @@ Der Kommentar MUSS sofort aktualisiert werden wenn der zugeordnete Code sich än
 
 **Comm-5**\
 Codeblöcke die im Editor nicht komplett auf einer Seite dargestellt werden können, sehr lang oder verschachtelt sind MÜSSEN einen End-Kommentar haben.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 foreach ($User in $Users)
 {
 
 ...(Sehr langer Codeabschnitt)
 
 }# End of foreach all Users.
-```        
-</td>
-</tr>
+
+</pre>
+        </td>
+    </tr>
 </table>
 
-Der End-Kommentar MUSS mit `# End of` beginnen und dem Schlüsselwort der Anwei­sung gefolgt von einem beschreibenden Text. Dies beinhaltet die Schlüsselwörter mit einem Codeblock wie z.B. `function, for, foreach, if, switch`. Durch diese Regel werden hängende schließende Klammern erklärt und dem Leser die Zuordnung erleichtert und die Ebene der Verschachtlung deutlicher gemacht.
+Der End-Kommentar MUSS mit `# End of` beginnen und dem Schlüsselwort der Anwei­sung gefolgt von einem beschreibenden Text. Dies beinhaltet die Schlüsselwörter mit einem Codeblock wie z.B. `function, for, foreach, if, switch`. Durch diese Regel werden hängende schließende Klammern erklärt und dem Leser die Zuordnung erleichtert und die Ebene der Verschachtelung deutlicher gemacht.
 
 **Comm-6**\
 Es DARF NICHT kommentiert werden was der Leser sowieso schon sieht sondern das 'Warum', 'Wie' und 'Wieso hier'. Ausnahme davon ist Regel **Comm-5**.
 
-
 # Konstanten
-
 **Const-1**\
 Der Bezeichner MUSS so beschreibend wie möglich sein und dabei aber nur so lang wie nötig.
 
@@ -1867,29 +1871,28 @@ Bezeichner MÜSSEN in Großbuchstaben geschrieben werden.
 
 **Const-4**\
 Konstanten MÜSSEN mit dem Cmdlet New-Variable erstellt werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 New-Variable -Name REGEX_VALID_NAME -Value '^\[a-z0-9\_\]+$'-Option Constant
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 $RegexValidName = '^\[a-z0-9\_\]+$'
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Const-5**\
@@ -1900,47 +1903,43 @@ Beispiel: Ist der Name der öffentlichen Bibliothek **LogFunction.ACME.lib.ps1**
     <tr><td style="border:0px">$LOGFUNCTION_AD_TIER0_OU</td></tr>
 </Table>
 
-
 # Variablen
 **Var-1**\
 Ein Bezeichner DARF NICHT aus einem einzelnen Buchstaben bestehen, außer in dem Falle dass er als Zählvariable in einer for-Schleife eingesetzt wird.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>       
 for ($i=0; $i -lt 100; $i++) { ... }
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 $C = (Get-ChildItem -Filter \*.txt).Count
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Var-1.1**\
 In Zählschleifen MÜSSEN die Bezeichner, die nur aus einem Buchstaben bestehen, die Buchstaben i,j,k,l,… in Kleinbuchstaben verwenden und sie MÜSSEN beim Ver­schachteln von Zählschleifen genau in dieser Reihenfolge genutzt werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 for ($a=0; $a -lt 100; $a++)
 {
     for ($b=0; $b -lt 1000; $b++)
@@ -1948,14 +1947,13 @@ for ($a=0; $a -lt 100; $a++)
     ...
     }   
 }
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 for ($k=0; $k -lt 100; $k++)
 {
     for ($i=0; $i -lt 1000; $i++)
@@ -1963,36 +1961,35 @@ for ($k=0; $k -lt 100; $k++)
     ...
     }
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Var-2**\
 Ein Bezeichner MUSS so beschreibend wie möglich sein dabei aber nur so lang wie nötig.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 $Ver = '3.0.1'
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre> 
 $VersionOfThisStrangeSoftwareIs= '3.0.1'
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Var-3**\
@@ -2021,56 +2018,54 @@ Enthält eine Variable eine Kollektion MUSS der Bezeichner mit dem Buchstaben 's
 
 **Var-9**\
 Der Bezeichner DARF Typinformationen (Hungarian Notation) NICHT enthalten.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 $NumberOfMembers = 1000
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre> 
 $IntNumberOfMembers = 1000
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Var-10**\
 Der Bezeichner DARF NICHT Ziffern oder andere Art von Nummerierung enthalten.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 $Name1
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre> 
 $Room1BuildingA
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Var-11**\
@@ -2078,29 +2073,28 @@ Variablen vom Typ 'Boolean', die das Ergebnis einer Entscheidung enthalten SOLLT
 
 **Var-12**\
 Enthält eine Variable einen Wert der eine physikalische oder andere Art der Einheit besitzt MUSS diese Einheit das Suffix des Bezeichners sein.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>   
 $RetentionPeriodDay
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre> 
 $MaxFileSizeGB
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 # Funktionen
@@ -2115,35 +2109,30 @@ Funktionsbezeichner unterscheiden sich allerdings in der Formatierung in Abhäng
 
 **Func-2.1**\
 Funktionsnamen in Controllern oder privaten Bibliotheken MÜSSEN ohne Bindestrich zwischen Verb und Noun geschrieben werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestConfigFile
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>function TestConfigFile
 {
 ...
 }
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function Test-ConfigFile
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>function Test-ConfigFile
 {
 ...
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 Der Nachteil der Schreibweise ohne Bindestrich, das manche Editoren dies dann u.U. nicht speziell hervorheben, wird durch den Vorteil aufgehoben das ganz explizit dargestellt wird dass diese Funktion Teil des Controllers selber ist.
@@ -2177,37 +2166,32 @@ Der Funktionsbezeichner DARF NICHT den Typ der zurückgegeben Daten enthalten (H
 
 **Func-4**\
 Die Parameter einer Funktion MÜSSEN im Funktionskörper mittels des Schlüsselwortes `param()` definiert werden und DARF NICHT im Funktionskopf erfolgen.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestUser
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>function TestUser
 {
     [CmdletBinding()]
     param ()
     ...
 }
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestUser ($User)
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>function TestUser ($User)
 {
 ...
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Func-5**\
@@ -2296,6 +2280,8 @@ Verweise zu Ressourcen, die zu der Funktion in Beziehung stehen.
 
 Werden eine oder beide dieser Sektionen genutzt MÜSSEN sie zwischen den Sektionen NOTES und PARAMETER eingefügt sein.
 
+<a id="funktionen-parameters"></a>
+
 ### PARAMETERS
 
 **Func-5.2**\
@@ -2311,6 +2297,8 @@ andernfalls
 <ParametersDefinition>
 ```
 Wie die \<ParametersDefinition> im Detail auszusehen hat entnehme man der Regel **Para-8** im Abschnitt [**Parameter**](#parameter).
+
+<a id="funktionen-parameter-check"></a>
 
 ### PARAMETER CHECK
 
@@ -2334,6 +2322,7 @@ andernfalls
 # PARAMETER CHECK
 {ParameterCheck}
 ```
+<a id="funktionen-declarations-and-definitions"></a>
 
 ### DECLARATIONS AND DEFINITIONS
 Die Definition und Deklaration von Variablen und Argumenten an einer dedizierten und prominenten Position in der Funktion verdeutlicht die Nutzung und Wichtigkeit der Elemente.
@@ -2373,61 +2362,53 @@ In Funktionen DÜRFEN Konstanten NICHT deklariert/definiert werden.
 
 **Func-7**\
 Das Schlüsselwort return SOLL nur zum vorzeitigen Beenden einer Funktion genutzt werden und DARF NICHT am Ende einer Funktion eingesetzt werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestUser
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>function TestUser
 {
     ...
     if ($HasError) { return }
     ...
 }
-```        
-</td>
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestUser
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>function TestUser
 {
     ...
     return # Letzte aktive Codezeile.
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Func-8**\
 Das Schlüsselwort `return` DARF NICHT mit der Rückgabe von Objekten verbunden werden.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function TestUser
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>function TestUser
 {
     ...
     return $Result
     ...
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Func-9**\
@@ -2442,24 +2423,22 @@ Funktionen DÜRFEN NICHT Formatierungen an den Objekten, die sie zurück geben, 
 
 **Func-12**\
 Funktionen DÜRFEN NICHT auf Variablen des aufrufenden Scopes schreibend zugrei­fen.
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>    
 $Script:NumberOfUsers += 1
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
-
 # Parameter
-
 Unter dem Begriff Parameter sollen hier spezifisch nur die formalen Argumente von Con­trollern und Funktionen verstanden werden.
 
 **Para-1**\
@@ -2479,57 +2458,53 @@ Kann ein Parameter mit den Validate-Attributen überprüft werden, so MUSS dies 
 
 **Para-6**\
 Der Name eines Parameters SOLLTE mit existierenden Bezeichnungen von Microsoft konform sein.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:34px;width:34px" src="check.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:34px;width:34px" src="check.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;width: 200px;vertical-align:middle">
+        <pre>    
 TestNetwork -Computer 'File1'
 FindMember -Identity 'Meyer'
-```        
-</td>
+
+</pre>
+        </td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>   
 TestNetwork -Host 'File1'
 FindMember -Account 'Meyer'
-```
-</td>
-</tr>
+
+</pre>
+    </td>
+    </tr>
 </table>
 
 Dies bezieht sich natürlich auch auf andere Hersteller z.B wenn man Skripts im Storage Umfeld entwickelt und Module von vSphere oder NetApp genutzt werden. Am besten orientiert man sich also an schon vorhandenen Cmdlets oder Funktionen, die in einer bestimmten Domäne allgemein genutzt werden ("Don't be too smart"-Prinzip) und erfindet keine neuen Konventionen.
 
 **Para-7**\
 Ein Parameter eines Controllers oder Funktion DARF NICHT auf der rechten Seite einer Zuweisung stehen. d.h. der Parameter muss während der gesamten Laufzeit des Controllers oder der Funktion das an ihn übergebene Argument beibehalten.
-
-<table style="margin-left:auto;margin-right:auto">
+<table style="border:none;margin-left:auto;margin-right:auto">
     <tr>
-    <td style="padding:0px;font-size:larger"><b>Beispiel:</b></td>
+    <td style="padding:0px;border:none;font-size:larger"><b>Beispiel:</b></td>
     </tr>
     <tr>
-        <td style="border:1px solid grey" align="center"><img style="height:42px;width:42px" src="cross.png"></td>
-        <td style="border:1px solid grey">
-
-```PowerShell
-function ConvertName
+        <td style="padding:0px;border:1px solid grey;vertical-align:middle" align="center"><img style="border:none;height:42px;width:42px" src="cross.png"></td>
+        <td style="padding:0px;border:1px solid grey;background-color: #ffffff;vertical-align:middle">
+        <pre>function ConvertName
 {
     param ([string]$Name)
     ...
-    $Name = "$NameAdmin"
+    $Name = "$Name_Admin"
     ...
 }
-```
-</td>
-</tr>
+</pre>
+    </td>
+    </tr>
 </table>
 
 **Para-7.1**\
@@ -2588,6 +2563,7 @@ Der Typ des Parameter MUSS explizit definiert werden:
 <Table style="border:0px;margin-left:auto;margin-right:auto;font-size:19px">
     <tr><td style="border:0px">[&lt;ParameterTyp>]$&lt;ParameterName></td></tr>
 </Table>
+
 **Para-9**\
 Unterstützt der Controller oder die Funktion den `-WhatIf` Risk-Mitigation Schalter MUSS dies im CmdletBinding-Attribut aktiviert sein:
 
@@ -2630,7 +2606,8 @@ Die Major-Version MUSS in den folgenden Fällen inkrementiert werden:
 \+ Ein Parameter wird umbenannt.\
 \+ Der Typ eines Parameters ändert sich.\
 \+ Der Objekttyp der Ausgabe ändert sich\
-\+ Ein neuer Parameter hat eine Wechselwirkung mit einem bereits vorhandenen Parameter\
+\+ Ein neuer Parameter hat eine Wechselwirkung mit einem bereits vorhandenen\
+&nbsp;&nbsp;&nbsp;Parameter\
 \+ Der selbe Parameter veranlasst ein geändertes Verhalten.\
 \+ Der Aufbau oder das Format des Log ändert sich.\
 \+ Vorhandene Logeinträge werden durch neue ersetzt.\
